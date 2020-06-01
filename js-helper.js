@@ -34,5 +34,6 @@ async function getProcessingPage(data) {
   return result;
 }
 
-const test = getProcessingPage([{ state: "processing" }, { state: "error" }]);
-test.then((data) => console.log(data));
+getProcessingPage([{ state: "processing" }, { state: "error" }]).then((data) =>
+  console.log(data)
+);
